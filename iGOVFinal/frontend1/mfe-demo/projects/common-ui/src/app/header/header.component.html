@@ -1,0 +1,49 @@
+
+        <!--Navbar-->
+        <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
+
+            <!-- Navbar brand -->
+            <mdb-navbar-brand><a class="navbar-brand" href="#">IGovern</a></mdb-navbar-brand>
+          
+            <!-- Collapsible content -->
+            <links>
+          
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a routerLink="/home" class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/todo" class="nav-link waves-light" mdbWavesEffect>Rule-Engine</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/workflow" class="nav-link waves-light" mdbWavesEffect>WorkFlow-Engine</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/newMfe1" class="nav-link waves-light" mdbWavesEffect>New MFE1</a>
+                    </li>
+                </ul>
+            </links>
+          </mdb-navbar>
+          <!-- 
+          <div style="text-align:center">
+              <h1>New Code Test</h1>
+              <button (click)="onClick()" class="btn btn-primary">Click Me</button>
+            </div> -->
+          
+          <br/><br>
+          <script>
+              function route(location){
+                  var temp = document.getElementById("IgovContainer");
+                  temp.src = location;
+              }
+              function test(){
+                 console.log('Test------------');
+                 alert('sdfsrg');
+              }
+              function foo() {
+          alert("test");
+          }
+          
+          </script>
+  <router-outlet></router-outlet>
